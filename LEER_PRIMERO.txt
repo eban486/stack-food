@@ -1,0 +1,46 @@
+STACK WEB V4 - PICKUP + MERCADO PAGO
+
+ARCHIVOS IMPORTANTES
+- index.html: la web principal.
+- assets/: fotos de productos. Podés reemplazar cualquier imagen manteniendo el mismo nombre de archivo.
+- api/create-preference.js: ejemplo de backend para crear el pago en Mercado Pago.
+
+FOTOS DE COCA-COLA Y SMARTWATER
+En assets/ están:
+- coca-cola.jpg
+- smartwater.jpg
+
+Son imágenes editables/placeholders. Para poner fotos reales:
+1. Conseguí una foto del producto.
+2. Renombrala exactamente como coca-cola.jpg o smartwater.jpg.
+3. Reemplazá el archivo dentro de assets/.
+4. La web la va a tomar automáticamente.
+
+PEDIDOS PARA RETIRAR EN TIENDA
+La web ya tiene:
+- Botones Agregar.
+- Carrito.
+- Total.
+- Horario de retiro.
+- Nombre, teléfono y notas.
+- Botón Pagar con Mercado Pago.
+
+IMPORTANTE SOBRE COBRO REAL
+Para que el pago sea real, no alcanza con abrir el HTML solo en Google Sites.
+Mercado Pago requiere una parte segura de backend para crear la preferencia de pago usando tu Access Token.
+
+OPCIÓN RECOMENDADA PARA ARRANCAR RÁPIDO
+Usar Tiendanube, WooCommerce o Shopify + Mercado Pago + retiro en tienda.
+Es lo más simple si querés operar rápido sin programar backend.
+
+OPCIÓN CUSTOM
+1. Subir esta web a Vercel, Netlify o un hosting similar.
+2. Agregar el backend /api/create-preference.js.
+3. Crear una aplicación en Mercado Pago Developers.
+4. Cargar el Access Token como variable de entorno.
+5. Configurar URLs de retorno y webhook.
+6. Cuando el cliente paga, Mercado Pago confirma el pago y el pedido queda registrado.
+
+GOOGLE SITES
+Google Sites sirve para una landing, catálogo o web institucional.
+Para checkout automático real, lo ideal es que Google Sites apunte con un botón a una tienda externa o a una web alojada en Vercel/Tiendanube/WooCommerce.
